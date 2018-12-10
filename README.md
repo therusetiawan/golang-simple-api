@@ -4,7 +4,19 @@ Simple golang boilerplate for building API
 
 ### How to Run
 
-_Coming Soon_
+1. Install all project dependencies
+```
+make install-dep
+```
+2. Generate gobindata for migrations
+```
+make generate-migration
+```
+3. Create new database
+4. Run this project
+```
+go run main.go -listen-port="5000" -db-url="postgres://postgres:postgres@localhost:5432/golang-simple-crud?sslmode=disable" -debug="true"
+```
 
 ### List of Routes
 
